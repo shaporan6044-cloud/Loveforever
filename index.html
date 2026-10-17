@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ff2d6f">
+  <title>For My Love ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient" id="ambient" aria-hidden="true"></div>
+  <header class="topbar">
+    <div class="brand">♥ <span>LoveBloom</span></div>
+    <button class="music-btn" id="musicBtn" aria-label="Music on or off">♫ <span id="musicLabel">Music Off</span></button>
+  </header>
+
+  <main>
+    <section class="screen active" id="welcome">
+      <div class="loading-heart">♥</div>
+      <p class="eyebrow">A LITTLE SURPRISE FOR YOU</p>
+      <h1 class="glow-title">Love<span>...</span></h1>
+      <p class="soft">ভালোবাসা মানেই তুমি, আর তোমাকে ঘিরে আমার সব সুন্দর মুহূর্ত।</p>
+      <div class="loading-track"><span></span></div>
+      <p class="tiny">Loading a little piece of my heart…</p>
+      <button class="primary" id="startBtn">♥ &nbsp; Tap to Bloom for Love &nbsp; →</button>
+    </section>
+
+    <section class="screen" id="bloom">
+      <p class="eyebrow">JUST FOR YOU</p>
+      <h2>একটি গোলাপ, হাজার অনুভূতি 🌹</h2>
+      <p class="soft">তোমার জন্য এই গোলাপটি ধীরে ধীরে ফুটবে…</p>
+      <div class="rose-stage" aria-label="An animated rose blooming">
+        <div class="sparkles">✦　·　✧　·　✦</div>
+        <div class="rose">
+          <div class="stem"></div><div class="leaf leaf-left"></div><div class="leaf leaf-right"></div>
+          <div class="flower">
+            <i class="petal p1"></i><i class="petal p2"></i><i class="petal p3"></i>
+            <i class="petal p4"></i><i class="petal p5"></i><i class="petal p6"></i>
+            <i class="petal p7"></i><i class="petal p8"></i><i class="petal p9"></i>
+            <i class="petal p10"></i><i class="petal p11"></i><i class="petal p12"></i>
+            <i class="petal center"></i>
+          </div>
+          <div class="glow"></div>
+        </div>
+        <div class="bloom-caption" id="bloomCaption">একটু অপেক্ষা করো… 🌱</div>
+      </div>
+      <div class="progress"><span id="bloomProgress"></span></div>
+      <p class="tiny">A rose for the one who makes my world beautiful</p>
+      <button class="primary hidden" id="letterBtn">আমার মনের কথা পড়ো ♥</button>
+    </section>
+
+    <section class="screen letter-screen" id="letter">
+      <p class="eyebrow">A LETTER FROM MY HEART</p>
+      <h2>আমার প্রিয় মানুষ ❤️</h2>
+      <div class="letter-card">
+        <div class="letter-flower">🌹</div>
+        <p>জানো, পৃথিবীতে অনেক সুন্দর জিনিস আছে, কিন্তু আমার কাছে সবচেয়ে সুন্দর হলো <strong>তুমি</strong>।</p>
+        <p>তোমার হাসি আমার মন ভালো করে দেয়, তোমার কথা আমার দিনটাকে সুন্দর করে তোলে। তুমি পাশে থাকলে ছোট ছোট মুহূর্তও আমার কাছে অনেক বড় আনন্দ হয়ে যায়।</p>
+        <p>সব দিন হয়তো একরকম যাবে না। কখনো অভিমান হবে, কখনো মন খারাপ হবে—তবুও আমি চাই, আমরা কথা বলে সব ভুল বোঝাবুঝি দূর করি এবং একে অপরের পাশে থাকি।</p>
+        <p>আমি তোমাকে শুধু সুন্দর মুহূর্তের জন্য নয়, সাধারণ দিনগুলোর জন্যও চাই। তোমার স্বপ্ন, তোমার হাসি, তোমার ছোট ছোট গল্প—সবকিছুর অংশ হতে চাই।</p>
+        <p class="signature">অনেক ভালোবাসা নিয়ে,<br><span>তোমারই একজন ❤️</span></p>
+      </div>
+      <button class="primary" id="memoriesBtn">আমাদের সুন্দর মুহূর্তগুলো →</button>
+    </section>
+
+    <section class="screen" id="memories">
+      <p class="eyebrow">OUR LITTLE UNIVERSE</p>
+      <h2>আমাদের সুন্দর মুহূর্ত ✨</h2>
+      <p class="soft">এখানে তোমাদের নিজেদের ছবি যোগ করতে পারবে।</p>
+      <div class="photo-grid">
+        <label class="photo-card"><input type="file" accept="image/*"><span class="photo-placeholder">＋</span><b>Our First Memory</b><small>প্রথম স্মৃতির ছবি যোগ করো</small></label>
+        <label class="photo-card"><input type="file" accept="image/*"><span class="photo-placeholder">＋</span><b>My Happiness</b><small>তোমাদের প্রিয় ছবি যোগ করো</small></label>
+        <label class="photo-card"><input type="file" accept="image/*"><span class="photo-placeholder">＋</span><b>Forever Moments</b><small>আরেকটি সুন্দর মুহূর্ত</small></label>
+      </div>
+      <p class="memory-note">“দূরত্ব বা সময় নয়—যত্ন, বিশ্বাস আর সম্মানই ভালোবাসাকে সুন্দর করে।”</p>
+      <button class="primary" id="finalBtn">শেষে তোমার জন্য একটি কথা ♥</button>
+    </section>
+
+    <section class="screen final-screen" id="final">
+      <div class="final-heart">♥</div>
+      <p class="eyebrow">ONE LAST THING</p>
+      <h2>তুমি আমার কাছে বিশেষ</h2>
+      <p class="soft final-copy">আমার জীবনে আসার জন্য ধন্যবাদ। তোমার দিনগুলো ভরে উঠুক হাসি, শান্তি আর ভালোবাসায়।</p>
+      <div class="heart-ring">🌹　♥　🌹</div>
+      <h3 class="glow-title">I Love You</h3>
+      <p>আজ, আগামীকাল, আর প্রতিটি সুন্দর মুহূর্তে।</p>
+      <button class="primary" id="againBtn">♥ আবার শুরু থেকে দেখো</button>
+      <p class="tiny">Made with love, just for you.</p>
+    </section>
+  </main>
+  <footer>Made with <span>♥</span> & a thousand rose petals</footer>
+  <audio id="loveMusic" loop preload="none">
+    <!-- নিজের অনুমতিপ্রাপ্ত MP3 ফাইল music.mp3 নামে একই ফোল্ডারে রাখলে এখানে বাজবে -->
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+  <script src="script.js"></script>
+</body>
+</html>
